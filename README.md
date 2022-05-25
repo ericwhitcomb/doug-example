@@ -2,9 +2,12 @@
 
 ## Installation
 
+If you don't have it already, install node on your system
+[Install Node](https://nodejs.org/en/)
+
 `npm install`
 
-Create .env file in the root directory
+Create .env file in the root directory  
 Add PORT environment variable, example...
 
 `PORT=7777`
@@ -14,5 +17,8 @@ Add PORT environment variable, example...
 `npm run server`
 
 ## Postman Tests
+
+If you don't have it already, install postman rest client on your system
+[Postman REST Client](https://www.postman.com/product/rest-client/)
 
 Import json file into Postman

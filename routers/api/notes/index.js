@@ -12,7 +12,7 @@ const DataService = require("../../../data");
 // UPDATE       PUT           '/api/notes/:id'    update note equal to id
 // DELETE       DELETE        '/api/notes/:id'    delete note equal to id
 
-// 'POST' = CREATE
+// 'POST' = CREATE (one)
 router.post("/", (req, res) => {
   console.log("POST /api/notes");
   const note = req.body;
