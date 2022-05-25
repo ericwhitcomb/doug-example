@@ -45,7 +45,7 @@ router.put("/:id", (req, res) => {
   res.status(200).json({ message: "Updated Note", note });
 });
 
-// 'DELETE' = READ (one by id)
+// 'DELETE' = DELETE (one by id)
 router.delete("/:id", (req, res) => {
   const id = req.params.id;
   console.log(`DELETE /api/notes/${id}`);
