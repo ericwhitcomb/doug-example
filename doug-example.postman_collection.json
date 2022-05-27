@@ -26,18 +26,87 @@
 			"name": "API URL",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api"
+					]
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Create Note",
+			"name": "Create Note 1",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"title\": \"Note One\",\r\n    \"content\": \"Lorem ipsum dolor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/api/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Note 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Note Two\",\r\n    \"content\": \"Lorem ipsum dolor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/api/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Note 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Note Three\",\r\n    \"content\": \"Lorem ipsum dolor\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -80,7 +149,59 @@
 			"response": []
 		},
 		{
-			"name": "Return Note by Id",
+			"name": "Return All Notes Sort ASC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/notes?sort=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return All Notes Sort DESC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/notes?sort=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Note by Id = 1",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -101,7 +222,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Note by Id",
+			"name": "Update Note by Id = 1",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -131,7 +252,28 @@
 			"response": []
 		},
 		{
-			"name": "Delete Note by Id",
+			"name": "Return Note by Id = 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/notes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note by Id = 1",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -146,6 +288,48 @@
 						"api",
 						"notes",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note by Id = 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/notes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note by Id = 3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/api/notes/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"api",
+						"notes",
+						"3"
 					]
 				}
 			},

@@ -23,7 +23,7 @@ module.exports = {
     if (sort === "ASC") {
       notesList.sort((a, b) => a.date - b.date);
     } else if (sort === "DESC") {
-      notesList.sort((a, b) => b - date - a.date);
+      notesList.sort((a, b) => b.date - a.date);
     }
     return notesList;
   },
